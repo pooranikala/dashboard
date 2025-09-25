@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Dashboard Assessment Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Dashboard Application** with a **frontend** built using **React** and a **backend** built using **Node.js (Express)**.  
 
-## Available Scripts
+The frontend uses **Bootstrap** for styling and **MUI icons** for UI components.  
+The backend uses **Express** and **CORS** to handle API requests.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, make sure you have the following installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm (comes with Node.js)
+- Git (optional, if cloning from GitHub)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+assessment/
+├─ frontend/ # React frontend
+│ ├─ public/
+│ ├─ src/
+│ └─ package.json
+└─ backend/ # Node.js backend
+├─ index.js
+└─ package.json
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Backend Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Open a terminal in the backend folder:
 
-### `npm run eject`
+```bash
+cd backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm init
+npm install express
+npm install cors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.Start the backend server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+node index.js
 
-## Learn More
+The server will run at http://localhost:5000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+API endpoint example:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+GET http://localhost:5000/api/users
 
-### Code Splitting
+## Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1.Open a terminal in the frontend folder:
 
-### Analyzing the Bundle Size
+cd frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2.Install dependencies:
 
-### Making a Progressive Web App
+npx create-react-app app-name
+npm install
+npm install bootstrap
+npm install @mui/icons-material
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3.Start the frontend:
 
-### Advanced Configuration
+npm start
+The app will run at http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Running the Project
 
-### Deployment
+Start the backend first (node index.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Then start the frontend (npm start)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open http://localhost:3000
+ in your browser
